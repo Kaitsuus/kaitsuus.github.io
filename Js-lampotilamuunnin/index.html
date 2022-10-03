@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="appBGround">
+        <header>
+            <h1>Lämpötilamuunnin</h1>
+        </header>
+        <div class="section1">
+            <div>
+                <select name="muunnos" id="muunnos">
+                    <option value="c2f">Celsius -> Fahrenheit </option>
+                    <option value="c2k">Celsius -> Kelvin</option>
+                    <option value="k2f">Kelvin -> Fahrenheit</option>
+                    <option value="k2c">Kelvin -> Celsius</option>
+                    <option value="f2c">Fahrenheit -> Celsius</option>
+                    <option value="f2k">Fahrenheit -> Kelvin</option>
+                </select>
+            </div>
+            <h2>Syötä lämpötila:</h2>
+            <input type="number" id="lampotila"></input>
+            <input type="button" id="btn" value="Muunna" onclick="muunna();"></input>
+            <div id="tulostus"></div>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &copy; 2022 <span>Kai Jukarainen</span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

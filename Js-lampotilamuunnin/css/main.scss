@@ -1,0 +1,69 @@
+body {
+    margin:  15em;
+    font-family: sans-serif;
+    margin-top: 1,5em;
+}
+
+.appBGround {
+    background-color: #eeeeee;
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,2);
+}
+header {
+    background-color: #003041;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+        
+}
+.section1 {
+    background-color: #c29938;
+    display: block;
+    color: #003041;
+    text-align: center;
+    border-radius: 15px;
+    
+    select{
+        margin: 1.5em;
+    }
+
+    #h2 {
+        margin-top: .3em;
+        padding-top: 1.5em;
+    }
+    #muunnos {
+        margin-bottom: 1.5em;
+        border-radius: 5px;
+    }
+    #btn {
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+    }
+    #tulostus {
+        padding-bottom: 1.5em;
+        font-weight: bold;
+    }
+
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #c29938;
+    color: #003041;
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 1.5em;
+    }
+    header {
+        text-align: center;
+        width: 100%;
+        font-size: x-small;
+    }
+}
