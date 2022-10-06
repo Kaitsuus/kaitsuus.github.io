@@ -1,0 +1,78 @@
+body{
+    background-color: #c29938;
+
+    footer{
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+
+    }
+}
+canvas {
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background-image: url(../sprites/Bckground2.png) ;
+}
+#btn {
+    position: absolute;
+    background-image: url('../sprites/START1.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: 100px;
+}
+#scroreBoard{
+    position: absolute;
+    background-image: url('../sprites/box2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    margin-left: 12em;
+    p {
+        font-family: 'Silkscreen', cursive;
+        font-size: 25px;
+        text-decoration: none;
+        margin-left: 1em;
+        color: white;
+        margin-top: 1.5em;
+    }
+}
+#scroreCycle{
+    position: absolute;
+    background-image: url('../sprites/box2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    margin-left: -12em;
+    p {
+        font-family: 'Silkscreen', cursive;
+        font-size: 25px;
+        text-decoration: none;
+        margin-left: 1em;
+        color: white;
+        margin-top: 1.5em;
+    }
+}
