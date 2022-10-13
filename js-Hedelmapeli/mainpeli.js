@@ -49,9 +49,9 @@ const canvasH = canvas.height = 600;
 
 //Image control//
 const roller1 = new Image();
-roller1.src = './sprites/rulla2.png';
+roller1.src = './Sprites/rulla2.png';
 const startImg = new Image();
-startImg.src = './sprites/onload.png';
+startImg.src = './Sprites/onload.png';
 const spriteW = 96;
 const spriteH = 96;
 let roller1frame = 15;
