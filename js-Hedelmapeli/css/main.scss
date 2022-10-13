@@ -18,7 +18,7 @@ canvas {
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
-    background-image: url('../Sprites/tausta.png');
+    background-image: url('../sprites/tausta.png');
 }
 #lukittulabel{
     position: absolute;
@@ -93,7 +93,7 @@ canvas {
 #lukittuImg{
     visibility: hidden;
     position: absolute;
-    background-image: url('../Sprites/lukittu.png');
+    background-image: url('../sprites/lukittu.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -109,7 +109,7 @@ canvas {
 #lukittu2Img{
     visibility: hidden;
     position: absolute;
-    background-image: url('../Sprites/lukittu.png');
+    background-image: url('../sprites/lukittu.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -125,7 +125,7 @@ canvas {
 #lukittu3Img{
     visibility: hidden;
     position: absolute;
-    background-image: url('../Sprites/lukittu.png');
+    background-image: url('../sprites/lukittu.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -141,7 +141,7 @@ canvas {
 #lukittu4Img{
     visibility: hidden;
     position: absolute;
-    background-image: url('../Sprites/lukittu.png');
+    background-image: url('../sprites/lukittu.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -156,7 +156,7 @@ canvas {
 }
 #value{
     position: absolute;
-    background-image: url('../Sprites/score&coins.png');
+    background-image: url('../sprites/score&coins.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -179,7 +179,7 @@ canvas {
 }
 #coins{
     position: absolute;
-    background-image: url('../Sprites/coins.png');
+    background-image: url('../sprites/coins.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -202,7 +202,7 @@ canvas {
 }
 #bets{
     position: absolute;
-    background-image: url('../Sprites/betvalue.png');
+    background-image: url('../sprites/betvalue.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -217,7 +217,7 @@ canvas {
 }
 #reset{
     position: absolute;
-    background-image: url('../Sprites/reset.png');
+    background-image: url('../sprites/reset.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
