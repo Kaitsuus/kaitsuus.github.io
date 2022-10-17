@@ -304,18 +304,8 @@ function lukitse4() {
 let aOn = true;
 function animateOnLoad(){
     if (aOn){
-        if (x < 4){
-            contex.clearRect(0, 0, canvasW, canvasH);
-            animateRoller1()
-            animateRoller2()
-            animateRoller3()
-            animateRoller4()
-            startBar()
-            requestAnimationFrame(animateOnLoad)
-        }
-        if (x == 4){
-            reset();
-        }
+        startBar()
+        requestAnimationFrame(animateOnLoad)
     }
 }
 animateOnLoad()
