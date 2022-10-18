@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="containerCanvas">
+
+        <canvas id="canvas"></canvas>
+
+        <h2 id="vuoro">Pelaaja #1 vuoro</h2>
+
+        <img src="./img/d1.gif" name="mydice" id="noppa">
+        <img src="./img/d1.gif" name="mydice2" id="noppa2">
+
+        <div class="containerNopat">
+            <input type="button" id="lopeta" value="" onclick="lisaaPisteet()"></input>
+            <input type="button" id="nopat" value="" onclick="heita();"></input>
+        </div>
+
+        <div id="playerOneScore">
+            <p id="pOs">Pelaaja yksi SCORE: 0</p>
+            <p id="pOne">voitot: 0</p>
+        </div>
+
+        <div id="playerTwoScore">
+            <p id="pTs">pelaaja kaksi SCORE: 0</p>
+            <p id="pTwo">voitot: 0</p>
+        </div>
+
+        <div class="pelaajaMaara">
+            <button id="yksiPelaaja">Yski Pelaaja</button>
+            <button id="kaksiPelaaja">Kaksi Pelaajaa</button>
+            <input type="text" id="pelaajaYksi" value="Nimi?" onclick="tyhjennaPelaajaYksi();"></input>
+            <input type="text" id="pelaajaKaksi" value="Nimi?" onclick="tyhjennaPelaajaKaksi();"></input>>
+        </div>
+
+        <div class="noppienMaara">
+            <button id="yksiNoppa">Yksi Noppa</button>
+            <button id="kaksiNoppa">Kaksi Noppaa</button>
+        </div>
+
+        <div class="tulos">
+            <input type="number" id="maxNumero">
+            <input type="button" value="Mihin asti?" id="value">
+            <p id="tahanAsti"></p>
+        </div>
+        <div class="voitto">
+            <input type="button" id="uudelleen" value="" onclick="uusiPeli();"></input>
+            <h1 id="voittaja"></h1>
+        </div>
+
+    </div>
+
+    <footer>
+        <div>
+            Copyright &copy; 2022 <span>Kai Jukarainen</span>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

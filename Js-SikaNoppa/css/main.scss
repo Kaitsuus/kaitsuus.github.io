@@ -1,0 +1,323 @@
+body{
+    background-color: #c29938;
+
+    footer{
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+
+    }
+}
+canvas{
+    z-index: -999;
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 600px;
+    background-image: url('../img/tausta.png');
+}
+#noppa{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -2em;
+    margin-top: -2em;  
+}
+#noppa2{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 2em;  
+    margin-top: -2em;  
+}
+#nopat{
+    position: absolute;
+    background-image: url('../img/roll.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 74px;
+    height: 52px;
+    margin-left: 3em;
+    margin-top: 3.5em;
+}
+#lopeta{
+    position: absolute;
+    background-image: url('../img/endturn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 74px;
+    height: 52px;
+    margin-left: -3em;
+    margin-top: 3.5em;
+}
+#uudelleen{
+    position: absolute;
+    background-image: url('../img/uudelleen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 152px;
+    height: 52px;
+    margin-left: 0em;
+    margin-top: 8em;
+}
+#yksiPelaaja{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -6em;
+    margin-top: 10.5em;
+    font-family: 'Silkscreen', cursive;
+    font-size: 16px;
+    width: 170px;
+    height: 25;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#pelaajaYksi{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -6em;
+    margin-top: 12.5em;
+    font-family: 'Silkscreen', cursive;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 163px;
+    height: 25;
+}
+#kaksiPelaaja{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 6em;
+    margin-top: 10.5em;
+    width: 170px;
+    height: 25;
+    font-family: 'Silkscreen', cursive;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#pelaajaKaksi{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 6em;
+    margin-top: 12.5em;
+    font-family: 'Silkscreen', cursive;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 163px;
+    height: 25;
+}
+#kaksiNoppa{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 6em;
+    margin-top: 14.5em;
+    width: 170px;
+    height: 25;
+    font-family: 'Silkscreen', cursive;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#yksiNoppa{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -6em;
+    margin-top: 14.5em;
+    width: 170px;
+    height: 25;
+    font-family: 'Silkscreen', cursive;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#maxNumero{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -6em;
+    margin-top: 16.5em;
+    width: 163px;
+    height: 25;
+    font-family: 'Silkscreen', cursive;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#value{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 6em;
+    margin-top: 16.5em;
+    width: 170px;
+    height: 25;
+    font-family: 'Silkscreen', cursive;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#playerOneScore{
+    position: absolute;
+    background-image: url('../img/scorewindow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 166px;
+    margin-left: -6em;
+    margin-top: -10.5em;
+    #pOs {
+        font-family: 'Silkscreen', cursive;
+        font-size: 28px;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 0.5em;
+        color: black;
+    }
+    #pOne{
+        font-family: 'Silkscreen', cursive;
+        font-size: 28px;
+        text-decoration: none;
+        text-align: center;
+        margin-top: -1em;
+        color: black;
+    }
+}
+#playerTwoScore{
+    position: absolute;
+    background-image: url('../img/scorewindow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 166px;
+    margin-left: 6em;
+    margin-top: -10.5em;
+    #pTs {
+        font-family: 'Silkscreen', cursive;
+        font-size: 28px;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 0.5em;
+        color: black;
+    }
+    #pTwo{
+        font-family: 'Silkscreen', cursive;
+        font-size: 28px;
+        text-decoration: none;
+        text-align: center;
+        margin-top: -1em;
+        color: black;
+    }
+}
+#vuoro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0em;
+    margin-top: -17.5em;
+    width: 220px;
+    height: 40;
+    font-family: 'Silkscreen', cursive;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#voittaja{
+    background-color: white;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0em;
+    margin-top: -1.5em;
+    width: 380px;
+    height: 75px;
+    font-family: 'Silkscreen', cursive;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#tahanAsti{
+    z-index: -900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0em;
+    margin-top: 7em;
+    width: 220px;
+    height: 100px;
+    font-family: 'Silkscreen', cursive;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
