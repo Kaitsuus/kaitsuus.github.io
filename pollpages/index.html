@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Etusivu</title>
+</head>
+<body>
+    <div class="header">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="./Suunnitelmat/logo.svg" alt="" id="logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="polls.html">Polls</a></li>
+                <li><a href="#" id="register">New user</a></li>
+                <li><a href="#" id="login">Login</a></li>
+                <li><a href="omatili.html" id="myAccount">My account</a></li>
+                <li><a href="index.html" id="logout" onclick="logOut();">Log out</a></li>
+            </ul>
+            <a href="#" id="close">CLOSE</a>
+        </nav>
+        <svg viewBox="0 0 100 80" width="60" height="40" id="hamburger">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+        </svg>
+
+
+    </div>
+
+    <div class="screen">
+        <div class="fillTextLeft">
+            <h1> all the fun <br>
+                you <br>
+                ever need
+            </h1>
+        </div>
+
+        <div class="pollsContainer">
+            <ul>
+                <li>
+                    <span>Best superpower</span>
+                </li>
+                <li id="other">
+                    <span>One thing you wish you had more?</span>
+                </li>
+                <li id="other">
+                    <span>Best tech invention of the 21st Century?</span>
+                </li>
+                <li>
+                    <span>This or That</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="formContainer">
+        <form id="lomake">
+            <div id="headers">
+            <h1 id="lomakeH1">Registration form</h1>
+            </div>
+            <div class="user">
+                <input type="text" id="id": placeholder="Username">
+            </div>
+            <div class="password">
+                <input type="password" id="password": placeholder="password">
+            </div>
+            <div class="email">
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div>
+                <button id="submit" onclick="registerUser();">Register</button>
+            </div>
+            <div class="closeForm" id="closeForm">+</div>
+        </form>
+    </div>
+
+    <div class="form2Container">
+        <form id="loginForm">
+            <div id="headers">
+            <h1 id="logInHeader">Login</h1>
+            </div>
+            <div class="user">
+                <input type="text" id="idLogIn": placeholder="Username">
+            </div>
+            <div class="password">
+                <input type="password" id="passwordLogIn": placeholder="Password">
+            </div>
+            <div class="newPwd">
+
+            </div>
+            <div>
+                <button id="Login" onclick="signIn();">Login</button>
+            </div>
+            <div>
+                <button id="forgot" onclick="resetPassword();">Forgot password?</button>
+            </div>
+            <div class="close2Form" id="close2Form">+</div>
+        </form>
+    </div>
+
+    <footer>
+        Copyright &copy; 2022 <span>Kai Jukarainen</span>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

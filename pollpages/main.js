@@ -37,7 +37,6 @@ logIn.addEventListener('click', () => {
     LogInPopUp.classList.remove('open-logInPopUp')
 });
 
-
 // Registeration //
 let userData = JSON.parse(localStorage.getItem('userData')) || [];
 function registerUser(){
@@ -266,6 +265,22 @@ function removeOption(){
 
 let data = JSON.parse(localStorage.getItem('data')) || [];
 
+function tester(){
+    let data = JSON.parse(localStorage.getItem('data')) || [];
+    const newPoll = {
+        questions: 'Best supehero?',
+        answers:['Superman', 'Batman', 'Spongebob', 'Ironman'],
+        value:[0, 15, 20, 18]
+    }
+    if(data.length > 0){
+       console.log('dont worry, be happy')
+    }else{
+        data.push({newPoll})
+        localStorage.setItem('data', JSON.stringify(data))
+        parseData()
+    }
+}
+
 
 function createApoll(){
     let ul = document.createElement("ul");
@@ -281,7 +296,6 @@ function createApoll(){
         answers:[],
         value:[]
     }
-    
     data.push({newPoll})
     localStorage.setItem('data', JSON.stringify(data))
     // create options for new poll //
@@ -318,7 +332,8 @@ function createApoll(){
 function parseData(){
     let data = JSON.parse(localStorage.getItem('data')) || [];
     let userData = JSON.parse(localStorage.getItem('userData')) || [];
-
+    tester()
+    
     // create polls structure from localStorage to DOM //
     for (let i = 0; i< data.length; i++){
         let ul = document.createElement("ul");
