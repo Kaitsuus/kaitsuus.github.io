@@ -1,3 +1,6 @@
+console.log('Create a poll by login as an admin.')
+console.log('Username: admin')
+console.log('Password: asd123')
 // Hamburger menu //
 const menu = document.getElementById('hamburger')
 const close = document.getElementById('close')
